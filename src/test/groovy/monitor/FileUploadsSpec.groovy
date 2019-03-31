@@ -1,9 +1,9 @@
 package monitor
 
-import grails.testing.web.controllers.ControllerUnitTest
+import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class HelloControllerSpec extends Specification implements ControllerUnitTest<HelloController> {
+class FileUploadsSpec extends Specification implements DomainUnitTest<File> {
 
     def setup() {
     }

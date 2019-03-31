@@ -17,3 +17,4 @@ Now follow these steps to launch the web application:
 # References
 Below are some reference web sites
 * https://docs.grails.org/3.3.9/guide/single.html#gettingStarted
+* http://gorm.grails.org/
