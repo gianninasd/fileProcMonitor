@@ -14,6 +14,8 @@ Now follow these steps to launch the web application:
 * Open a console and run `grails` ... to start the Grails CLI
 * From within the Grails CLI run `run-app`
 
+Then open a browser and navigate to http://localhost:8080/monitor/list
+
 # References
 Below are some reference web sites
 * https://docs.grails.org/3.3.9/guide/single.html#gettingStarted
