@@ -3,6 +3,8 @@ package monitor
 class HelloController {
 
     def index() {
-        render "Hello world!"
+        def grailsVersion = grailsApplication.config.getProperty('info.app.grailsVersion')
+
+        render "Hello world >> " + grailsVersion
     }
 }
