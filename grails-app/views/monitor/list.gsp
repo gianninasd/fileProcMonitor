@@ -2,8 +2,12 @@
 
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
   <title>FileProc Monitoring</title>
+
+  <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
   <asset:stylesheet src="monitor.css"/>
 </head>
 <body>
@@ -17,7 +21,10 @@
       <th>Filename</th>
       <th>Date</th>
       <th>Records</th>
+      <th>Initial</th>
       <th>Sent</th>
+      <th>Success</th>
+      <th>Failed</th>
     </thead>
     <tbody>
       <g:each var="file" in="${last10Files}">
@@ -25,8 +32,11 @@
           <td>${file.id}</td>
           <td>${file.filename}</td>
           <td>${file.creationDate}</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+          <td>${file.cntTotal}</td>
+          <td>${file.cntInitial}</td>
+          <td>${file.cntSent}</td>
+          <td>${file.cntSuccess}</td>
+          <td>${file.cntFailed}</td>
         </tr>
       </g:each>
     </tbody>
