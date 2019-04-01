@@ -1,7 +1,5 @@
 package monitor
 
-import monitor.FileSummary
-
 class MonitorController {
 
     /**

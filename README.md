@@ -1,5 +1,5 @@
-# Grails FileProc Monitor
-Frontend web app to monitor uploaded files built using Grails
+# Grails File Monitor
+Front-end web application written in Grails to monitor uploaded files
 
 # Pre-requisites
 * Install Groovy 2.5.x
@@ -12,7 +12,7 @@ First get the code:
 
 Now follow these steps to launch the web application:
 * Open a console and run `grails` ... to start the Grails CLI
-* From within the Grails CLI run `run-app`
+* From within the Grails CLI execute `run-app`
 
 Then open a browser and navigate to http://localhost:8080/monitor/list
 
