@@ -1,5 +1,8 @@
 package monitor
 
+/**
+ * Primary controller to handle requests for monitoring file processing operations.
+ */
 class MonitorController {
 
     /**
@@ -14,7 +17,7 @@ class MonitorController {
      */
     def list() {
         log.info "Retrieving file list..."
-        def grailsVersion = grailsApplication.config.getProperty('info.app.grailsVersion')
+        //def grailsVersion = grailsApplication.config.getProperty('info.app.grailsVersion')
         def last10Files = FileUploads.list(sort: "creationDate", order: "desc", max: 10)
         def items = []
 
@@ -31,7 +34,15 @@ class MonitorController {
             items.add(summary)
         }
 
-        def map = [grailsVersion: grailsVersion, last10Files: items]
+        def map = [last10Files: items]
         render(view: "list", model: map)
+    }
+
+    /**
+     * Display the details of a given file.
+     */
+    def details() {
+        log.info "Retrieving details for file id: " + params.id
+        render(view: "details")
     }
 }
